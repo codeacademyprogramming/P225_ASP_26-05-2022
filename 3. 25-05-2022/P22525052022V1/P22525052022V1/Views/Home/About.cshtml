@@ -1,0 +1,19 @@
+﻿@model Teacher
+
+@{
+    ViewData["Title"] = "About";
+}
+
+<h1>About</h1>
+<h3>Id: @TempData["id"]</h3>
+<h3>Name: @TempData["name"]</h3>
+
+<h1>Teacher Info</h1>
+<h3>Ad: @Model.Name</h3>
+<h3>SoyAd: @Model.SurName</h3>
+<h3>Yas: @Model.Age</h3>
+<h3>Tecrube: @Model.Experiance</h3>
+
+
+<a asp-controller="home" asp-action="index">Index</a>
+<a asp-controller="home" asp-action="contact">Contact</a>

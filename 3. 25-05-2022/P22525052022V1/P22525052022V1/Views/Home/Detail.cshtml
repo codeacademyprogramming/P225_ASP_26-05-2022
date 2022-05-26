@@ -1,0 +1,13 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail @ViewBag.id</h1>
+
+<h3>Ad: @Model.Name</h3>
+<h3>SoyAd: @Model.SurName</h3>
+<h3>Yas: @Model.Age</h3>
+<h3>Ortalama Qiymet: @Model.AvgPoint</h3>
+
+<a asp-controller="home" asp-action="index">Index</a>

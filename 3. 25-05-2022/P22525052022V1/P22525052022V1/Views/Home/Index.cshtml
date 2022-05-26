@@ -1,0 +1,18 @@
+﻿@model List<Group>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<ul>
+    @foreach (Group group in Model)
+    {
+        <li><a asp-controller="student" asp-action="index" asp-route-id="@group.Id">@($"{group.Name}")</a></li>
+    }
+</ul>
+
+@*<a asp-controller="home" asp-action="about" asp-route-id="99" asp-route-name="Hamid" asp-route-surname="Mammadov">About</a>
+
+<a asp-controller="home" asp-action="contact">Contact</a>*@

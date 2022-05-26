@@ -1,0 +1,21 @@
+﻿@model GroupViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<ul>
+    @foreach (Group item in Model.Groups)
+    {
+        <li>@item.Name</li>
+    }
+</ul>
+
+<ul>
+    @foreach (Student item in Model.Students)
+    {
+        <li>@item.Name</li>
+    }
+</ul>
+
